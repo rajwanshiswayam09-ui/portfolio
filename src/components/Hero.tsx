@@ -100,16 +100,13 @@ export const Hero: React.FC = () => {
           </button>
 
           <a
-            href="#"
-            className="flex items-center justify-center space-x-2 px-8 py-4 w-full sm:w-auto text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors hover:bg-slate-100 rounded-2xl border border-transparent"
-            onClick={(e) => {
-              e.preventDefault();
-              alert('Resume download is a demonstration link. In a deployed setup, this downloads Swayam\'s PDF resume.');
-            }}
-          >
+           href="/resume.pdf"
+           download="Swayam-Rajwanshi-Resume.pdf"
+           className="flex items-center justify-center space-x-2 px-8 py-4 w-full sm:w-auto text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors hover:bg-slate-100 rounded-2xl border border-transparent"
+            >
             <Download size={16} className="text-slate-500" />
             <span>Resume</span>
-          </a>
+         </a>
         </motion.div>
       </div>
 

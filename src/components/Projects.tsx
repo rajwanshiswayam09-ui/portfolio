@@ -143,10 +143,8 @@ export const Projects: React.FC = () => {
                     </a>
                     <a
                       href={project.demoUrl}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        alert('Demo mode: Link points to ' + project.title);
-                      }}
+                      
+                      
                       className="p-2 rounded-xl text-slate-500 hover:text-slate-900 bg-slate-50 border border-slate-200/60 hover:bg-slate-100 transition-all"
                       title="Live Demo"
                     >
@@ -257,10 +255,7 @@ export const Projects: React.FC = () => {
                     
                     <a
                       href={selectedProject.demoUrl}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        alert('Demo mode: Link points to ' + selectedProject.title);
-                      }}
+                      
                       className="flex-1 flex items-center justify-center space-x-2 py-3 px-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-accentIndigo to-accentPurple hover:from-accentIndigo/90 hover:to-accentPurple/90 shadow-md shadow-accentIndigo/10 transition-all"
                     >
                       <ExternalLink size={16} />
